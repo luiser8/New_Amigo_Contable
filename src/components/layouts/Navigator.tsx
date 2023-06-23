@@ -19,7 +19,9 @@ const categories = [
   {
     id: 'Asientos',
     children: [
-      { id: 'Asientos contables', path: '/', icon: <LocalOfferOutlinedIcon />, active: true, },
+      { id: 'Asientos contables', path: '/asientos', icon: <TrendingDownOutlinedIcon />, active: true, },
+      { id: 'Libro mayor', path: '/libroMayor', icon: <TrendingDownOutlinedIcon />, active: true, },
+      { id: 'Balance de comprobación', path: '/balance', icon: <TrendingDownOutlinedIcon />, active: true, },
     ],
   },
   {

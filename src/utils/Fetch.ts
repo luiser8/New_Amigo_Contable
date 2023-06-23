@@ -6,7 +6,7 @@ export const get = async (route: string) => {
         method: 'GET',
         mode: 'cors',
         cache: 'no-cache',
-        headers: new Headers({ 'Content-Type': 'application/json' }),
+        headers: new Headers({ 'Content-Type': 'application/json', 'Authorization': `Basic ${btoa('P$m:Bn@')}` }),
     }).then(response => {
         if (response.status >= 200 && response.status <= 299) {
             return response.json();
@@ -27,7 +27,7 @@ export const post = async (route: string, data: any) => {
         method: 'POST',
         mode: 'cors',
         cache: 'no-cache',
-        headers: new Headers({ 'Content-Type': 'application/json' }),
+        headers: new Headers({ 'Content-Type': 'application/json', 'Authorization': `Basic ${btoa('P$m:Bn@')}` }),
         body: JSON.stringify(data),
     }).then(response => {
         if (response.status >= 200 && response.status <= 299) {

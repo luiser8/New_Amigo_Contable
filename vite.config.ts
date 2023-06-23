@@ -7,5 +7,8 @@ export default defineConfig({
   build: {
      outDir: 'dist',
           },
-  publicDir: 'public/assets'
+  publicDir: 'public/assets',
+  optimizeDeps: {
+    exclude: ['js-big-decimal']
+  }
 });

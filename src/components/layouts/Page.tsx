@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 const Page = forwardRef(({ children, title = '', meta, ...other } : any, ref) => (
   <Fragment>
     <Helmet>
-      <title>{`${title} | ECP Web`}</title>
+      <title>{`${title} | New Amigo Contable`}</title>
       {meta}
     </Helmet>
     <Box ref={ref} {...other}>

@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import useStorage from "./useStorage";
 import { TypesContext } from "../types/Types.context";
 import { IUserAuth } from "../interfaces/IUserAuth";
@@ -19,6 +20,7 @@ interface Props {
 }
 
 export const ContextProvider: React.FC<Props> = ({ children }) => {
+  const navigate = useNavigate();
   const {
     getUserIdStorage,
     getEmailStorage,
@@ -43,6 +45,7 @@ export const ContextProvider: React.FC<Props> = ({ children }) => {
   const logout = () => {
     setLocalStorage(2, null);
     setDataUser(userDataInitial);
+    navigate("/");
   };
 
   return (
