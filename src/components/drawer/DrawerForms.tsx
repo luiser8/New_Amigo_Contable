@@ -39,7 +39,7 @@ const DrawerForms = (props: Props) => {
         PaperProps={{
             sx: {
               backgroundColor: "#fff",
-              width: "34%",
+              width: "40%",
               padding: "10px"
             }
           }}

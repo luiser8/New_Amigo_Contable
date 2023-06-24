@@ -25,7 +25,7 @@ const PlanCuentasSelect = ({ setValue, value }: TSelectProps) => {
     }, []);
 
     useEffect(() => {
-        setAutocomplete(planCuenta.map(option => ({ label: option.Nombre, id: option.IdPlanCuenta })));
+        setAutocomplete(planCuenta.map(option => ({ label: `${option.Numero} - ${option.Nombre}`, id: option.IdPlanCuenta })));
     }, [planCuenta]);
 
   return (
