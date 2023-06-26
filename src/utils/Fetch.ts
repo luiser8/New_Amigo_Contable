@@ -1,4 +1,4 @@
-const apiurl = import.meta.env.VITE_API_URL_LOCAL;
+const apiurl = import.meta.env.VITE_API_URL;
 
 export const get = async (route: string) => {
     const url = `${apiurl}${route}`;

@@ -23,15 +23,15 @@ const TableBalanceComprobacion = (
                 <Table size="small" aria-label="collapsible table">
                     <TableHead>
                         <TableRow>
-                            {Object.keys(columns).map((key, column) => (
-                                <TableCell key={key} align={columns[column].align} style={{ fontWeight: "bold", backgroundColor: columns[column].color }}>
+                            {columns?.map((key: any, column: any) => (
+                                <TableCell key={key} style={{ fontWeight: "bold", backgroundColor: columns[column].color }}>
                                     {columns[column].name}
                                 </TableCell>
                             ))}
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {Object.keys(rows).map((key, row) => (
+                        {rows?.map((key: any, row: any) => (
                             <TableRow key={key}>
                                 <TableCell align="left">{rows[row].NroCuenta}</TableCell>
                                 <TableCell align="left">{rows[row].DescripcionCuenta}</TableCell>

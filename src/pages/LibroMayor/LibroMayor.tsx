@@ -19,7 +19,7 @@ const LibroMayor = () => {
     { id: 1, name: 'Nro', color: '#e3f2fd', align: 'left' },
     { id: 2, name: 'Asiento', color: '#e3f2fd', align: 'left' },
     { id: 3, name: 'Fecha', color: '#e3f2fd', align: 'left' },
-    { id: 4, name: 'PeriodoContable', color: '#e3f2fd', align: 'left' },
+    // { id: 4, name: 'PeriodoContable', color: '#e3f2fd', align: 'left' },
     { id: 5, name: 'NroCuenta', color: '#e3f2fd', align: 'left' },
     { id: 6, name: 'Cuenta', color: '#e3f2fd', align: 'left' },
     { id: 7, name: 'TotalDebe', color: '#e3f2fd', align: 'left' },

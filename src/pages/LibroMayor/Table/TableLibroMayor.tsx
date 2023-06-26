@@ -25,20 +25,20 @@ const TableLibroMayor = (
                 <Table size="small" aria-label="collapsible table">
                     <TableHead>
                         <TableRow>
-                            {Object.keys(columns).map((key, column) => (
-                                <TableCell key={key} align={columns[column].align} style={{ fontWeight: "bold", backgroundColor: columns[column].color }}>
+                            {columns?.map((key: any, column: any) => (
+                                <TableCell key={key} style={{ fontWeight: "bold", backgroundColor: columns[column].color }}>
                                     {columns[column].name}
                                 </TableCell>
                             ))}
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {Object.keys(rows).map((key, row) => (
+                        {rows?.map((key: any, row: any) => (
                             <TableRow key={key}>
                                 <TableCell align="left">{rows[row].NroComprobante}</TableCell>
                                 <TableCell align="left">{rows[row].DescripcionAsiento}</TableCell>
                                 <TableCell align="left">{moment(rows[row].FechaAsientoDetalle).format("DD-MM-YYYY")}</TableCell>
-                                <TableCell align="left">{rows[row].PeriodoContable}</TableCell>
+                                {/* <TableCell align="left">{rows[row].PeriodoContable}</TableCell> */}
                                 <TableCell align="left">{rows[row].NroCuenta}</TableCell>
                                 <TableCell align="left">{rows[row].DescripcionCuenta}</TableCell>
                                 <TableCell align="left">{rows[row].TotalDebe}</TableCell>

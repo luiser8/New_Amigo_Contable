@@ -22,11 +22,11 @@ const AsientosContables = () => {
     { id: 4, name: 'Cuenta', color: '#e3f2fd', align: 'left' },
     // { id: 5, name: 'CentroCosto', color: '#e3f2fd', align: 'left' },
     { id: 6, name: 'Moneda', color: '#e3f2fd', align: 'left' },
-    { id: 7, name: 'Descripcion', color: '#e3f2fd', align: 'left' },
+    { id: 7, name: 'Descripción', color: '#e3f2fd', align: 'left' },
     { id: 8, name: 'Debe', color: '#e3f2fd', align: 'left' },
     { id: 9, name: 'Haber', color: '#e3f2fd', align: 'left' },
     { id: 10, name: 'Referencia', color: '#e3f2fd', align: 'left' },
-    { id: 11, name: 'FechaAsiento', color: '#e3f2fd', align: 'left' },
+    { id: 11, name: 'Fecha', color: '#e3f2fd', align: 'left' },
     { id: 12, name: 'Estado', color: '#e3f2fd', align: 'left' },
     { id: 13, name: 'Opciones', color: '#e3f2fd', align: 'right' },
   ];

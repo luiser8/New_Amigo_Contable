@@ -32,7 +32,7 @@ export type TTableParams = {
     setPage?: Function
     openDelete?: boolean
     setOpenDelete?: Function
-    showDeleteAsientos?: Function
+    showDeleteAsientos: Function
     handleConfirm?: Function
     asientosValue?: {
         open: boolean;
